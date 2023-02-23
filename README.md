@@ -1,6 +1,6 @@
-# leader-board
+# leader-board ![test](https://github.com/allevo/leader-board/actions/workflows/node.js.yml/badge.svg)
 
-## How to run 
+## How to run locally
 Create the file `backend/.env` from `backend/default.env` with the right values.
 
 Open 3 terminals:
