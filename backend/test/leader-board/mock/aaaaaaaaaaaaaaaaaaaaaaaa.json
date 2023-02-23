@@ -1,0 +1,32 @@
+{
+    "listOfrecollections": [
+        {
+            "_id": "a00000000000000000000000",
+            "kg": 34.9,
+            "fishermanID": "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "ongID": "xxxxxxxxxxxxxxxxxxxxxxxx",
+            "date": "2023-01-24T00:00:00.000Z",
+            "pictureWeight": "http://static.content/a00000000000000000000000/1",
+            "pictureRecollection": "http://static.content/a00000000000000000000000/2",
+            "kg_availables": 34.9,
+            "enabled": true,
+            "createdAt": "2023-02-02T09:20:19.266Z",
+            "updatedAt": "2023-02-02T09:20:19.266Z",
+            "__v": 0
+        },
+        {
+            "_id": "a00000000000000000000001",
+            "kg": 28.3,
+            "fishermanID": "aaaaaaaaaaaaaaaaaaaaaaaa",
+            "ongID": "xxxxxxxxxxxxxxxxxxxxxxxx",
+            "date": "2023-01-24T00:00:00.000Z",
+            "pictureWeight": "http://static.content/a00000000000000000000001/1",
+            "pictureRecollection": "http://static.content/a00000000000000000000001/2",
+            "kg_availables": 28.3,
+            "enabled": true,
+            "createdAt": "2023-02-02T09:21:02.447Z",
+            "updatedAt": "2023-02-02T09:21:02.447Z",
+            "__v": 0
+        }
+    ]
+}
