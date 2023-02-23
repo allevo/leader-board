@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
-export default function Index() {
+export default function Index () {
   return (
-    <h1 className="title">
-      <Link href="/leader-boards/monthly">Go to Leader Board</Link>
+    <h1 className='title'>
+      <Link href='/leader-boards/monthly'>Go to Leader Board</Link>
     </h1>
   )
-} 
+}

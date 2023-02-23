@@ -28,6 +28,13 @@ export default class LeaderBoardService {
 
     if (doc != null) {
       doc.items.sort((a: any, b: any) => b.score - a.score)
+
+      doc.items.forEach((item: any) => {
+        item.recollections.sort((r1: any, r2: any) => {
+          return r2.date.getTime() - r1.date.valueOf()
+        })
+        item.recollections = item.recollections.slice(0, 10)
+      })
     }
 
     return doc as unknown as LeaderBoardType
@@ -85,7 +92,7 @@ export default class LeaderBoardService {
       {
         $group: {
           _id: { year: { $year: '$date' }, month: { $month: '$date' }, fishermanId: '$fishermanID' },
-          recollections: { $push: { picture: '$pictureRecollection', kg: '$kg', _id: '$ogyreId' } },
+          recollections: { $push: { picture: '$pictureRecollection', kg: '$kg', _id: '$ogyreId', date: '$date' } },
           total: { $sum: '$kg' }
         }
       },
