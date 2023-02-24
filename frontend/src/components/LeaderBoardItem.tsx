@@ -20,7 +20,7 @@ export default function LeaderBoardItemComponent ({ index, item, toHide }: Leade
         <h5
           className='mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50'
         >
-          {index} {fisherman.name}
+          {index}. <small>{fisherman.name}</small>
         </h5>
         <p className='text-xs text-neutral-800 dark:text-neutral-50'>
           {score} Kg

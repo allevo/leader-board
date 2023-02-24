@@ -8,14 +8,14 @@ const PER_PAGE = 5
 export default function LeaderBoardItemListComponent ({ items, selected, onFishermanClick }: LeaderBoardItemListComponentProps) {
   const [itemNumberToShow, setItemNumberToShow] = useState(PER_PAGE)
 
-  function nextPage () {
+  function loadMore () {
     setItemNumberToShow(itemNumberToShow + PER_PAGE)
   }
 
   const nextPageDiv = itemNumberToShow <= items.length
     ? (
       <div className='text-center'>
-        <button className='m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={nextPage}>Next Page</button>
+        <button className='m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={loadMore}>Load more</button>
       </div>
       )
     : null
@@ -35,7 +35,7 @@ export default function LeaderBoardItemListComponent ({ items, selected, onFishe
                     onFishermanClick(i)
                   }} href=''
                 >
-                  <LeaderBoardItemComponent index={index + 1} item={item} toHide={!isSelected} />
+                  <LeaderBoardItemComponent index={index} item={item} toHide={!isSelected} />
                 </Link>
               </li>
             )
