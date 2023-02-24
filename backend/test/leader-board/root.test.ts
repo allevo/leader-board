@@ -16,7 +16,8 @@ test('after import data', async (t) => {
     .reply(200, (uri) => require(join(__dirname, 'mock', `${uri.split('/').pop()}.json`)))
 
   const res = await app.inject({
-    url: '/admin/import-data'
+    url: '/admin/import-data',
+    method: 'POST',
   })
   t.equal(res.statusCode, 200)
   t.same(JSON.parse(res.payload), { ok: true })

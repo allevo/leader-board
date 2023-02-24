@@ -16,7 +16,7 @@ PORT=8080 npm start
 - term2
 Import data into DB
 ```
-curl localhost:8080/admin/import-data
+curl -XPOST localhost:8080/admin/import-data
 ```
 
 - term2

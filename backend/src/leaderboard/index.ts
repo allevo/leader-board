@@ -20,7 +20,7 @@ const LeaderBoardPlugin: FastifyPluginAsync<LeaderBoardPluginOptsType> = async (
   const service = new LeaderBoardService(db, api)
 
   // TODO: think a protection for this API
-  fastify.get('/admin/import-data', async function (request) {
+  fastify.post('/admin/import-data', async function (request) {
     await service.importData(request.log)
 
     return { ok: true }
