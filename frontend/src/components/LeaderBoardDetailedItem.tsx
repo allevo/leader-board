@@ -25,7 +25,7 @@ export default function LeaderBoardDetailedItemComponent ({ index, item }: Leade
                   src={recollection.picture}
                   alt={`Weight of ${recollection.kg}`}
                 />
-                <p>{recollection.kg}</p>
+                <p>{recollection.kg}kg at {new Intl.DateTimeFormat('en-US').format(new Date(recollection.date))}</p>
               </div>
             )
           })
