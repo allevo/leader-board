@@ -22,7 +22,7 @@ export default function LeaderBoardItemComponent ({ index, item, toHide }: Leade
         >
           {index} {fisherman.name}
         </h5>
-        <p className='text-xs'>
+        <p className='text-xs text-neutral-800 dark:text-neutral-50'>
           {score} Kg
         </p>
       </div>
